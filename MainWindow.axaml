@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="GestorVideojuegos.MainWindow"
+        Title="Gestor de Videojuegos"
+        Width="800"
+        Height="600">
+
+    <StackPanel Margin="20" Spacing="10">
+
+        <TextBlock Text="Gestor de Videojuegos"
+                   FontSize="22"/>
+
+        <TextBox Name="txtNombre"
+                 Watermark="Nombre"/>
+
+        <TextBox Name="txtGenero"
+                 Watermark="Género"/>
+
+        <TextBox Name="txtPlataforma"
+                 Watermark="Plataforma"/>
+
+        <TextBox Name="txtCalificacion"
+                 Watermark="Calificación"/>
+
+        <TextBox Name="txtIdEliminar"
+                 Watermark="ID a eliminar"/>
+
+        <StackPanel Orientation="Horizontal"
+                    Spacing="10">
+
+            <Button Content="Guardar"
+                    Click="Guardar_Click"/>
+
+            <Button Content="Actualizar Lista"
+                    Click="Cargar_Click"/>
+
+            <Button Content="Eliminar"
+                    Click="Eliminar_Click"/>
+
+        </StackPanel>
+
+        <ListBox Name="listaVideojuegos"
+                 Height="300"/>
+
+    </StackPanel>
+
+</Window>
